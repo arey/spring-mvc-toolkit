@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.javaetmoi.core</groupId>
+    <artifactId>spring-mvc-toolkit-reactor</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>spring-mvc-toolkit-demo</artifactId>
+  <name>JavaEtMoi Core :: ${project.artifactId} - ${project.packaging}</name>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <description>Web app demo the Spring MVC Toolkit</description>
+
+  <properties>
+    <!-- Version of third libraries -->
+    <version.servlet-api>3.0.1</version.servlet-api>
+    <version.spring-framework>4.0.6.RELEASE</version.spring-framework>
+    <version.junit>4.11</version.junit>
+
+    <!-- Jetty -->
+    <jetty.maven.version>8.1.13.v20130916</jetty.maven.version>
+    <jetty.port>8080</jetty.port>
+    <jetty.scanIntervalSeconds>1</jetty.scanIntervalSeconds>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.javaetmoi.core</groupId>
+      <artifactId>spring-mvc-toolkit</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Servlet API -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>${version.servlet-api}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${version.spring-framework}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${version.junit}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+
+  <build>
+    <pluginManagement>
+
+      <plugins>
+        <plugin>
+          <groupId>org.mortbay.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>${jetty.maven.version}</version>
+          <configuration>
+            <scanIntervalSeconds>${jetty.scanIntervalSeconds}</scanIntervalSeconds>
+            <stopKey>stop-jetty</stopKey>
+            <stopPort>9999</stopPort>
+            <systemProperties>
+              <systemProperty>
+                <name>jetty.port</name>
+                <value>${jetty.port}</value>
+              </systemProperty>
+              <systemProperty>
+                <name>spring.profiles.active</name>
+                <value>${spring.profiles.active}</value>
+              </systemProperty>
+            </systemProperties>
+            <webApp>
+              <contextPath>/</contextPath>
+            </webApp>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>
