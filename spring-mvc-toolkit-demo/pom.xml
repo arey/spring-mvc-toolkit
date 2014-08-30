@@ -4,11 +4,11 @@
   <parent>
     <groupId>com.javaetmoi.core</groupId>
     <artifactId>spring-mvc-toolkit-reactor</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>spring-mvc-toolkit-demo</artifactId>
   <name>JavaEtMoi Core :: ${project.artifactId} - ${project.packaging}</name>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
   <packaging>war</packaging>
   <description>Web app demo the Spring MVC Toolkit</description>
 

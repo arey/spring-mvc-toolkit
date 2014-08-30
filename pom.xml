@@ -5,7 +5,7 @@
   <groupId>com.javaetmoi.core</groupId>
   <artifactId>spring-mvc-toolkit-reactor</artifactId>
   <name>JavaEtMoi Core :: ${project.artifactId} - ${project.packaging}</name>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <description>Maven reactor of the Spring MVC Toolkit</description>
   <inceptionYear>2014</inceptionYear>
