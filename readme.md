@@ -77,7 +77,7 @@ Download the jar though Maven:
 <dependency>
   <groupId>com.javaetmoi.core</groupId>
   <artifactId>spring-mvc-toolkit</artifactId>
-  <version>0.1.0</version>
+  <version>0.1</version>
 </dependency> 
        
 <repository>
@@ -143,7 +143,7 @@ mvn eclipse:clean eclipse:eclipse
     <td>0.2.0-SNAPSHOT</td><td>next version</td><td></td>
   </tr>
   <tr>
-    <td>0.1.0</td><td>29/08/2014</td><td>Html5InputTag for HTML 5 validation from Bean Validation constraints</td>
+    <td>0.1</td><td>30/08/2014</td><td>Html5InputTag for HTML 5 validation from Bean Validation constraints</td>
   </tr>
 </table>
 
