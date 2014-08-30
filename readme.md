@@ -69,7 +69,6 @@ Here the mapping between Java and HTML 5 code:
 	</tbody>
 </table>
 
-
 ## Quick Start ##
 
 Download the jar though Maven:
@@ -113,6 +112,8 @@ mvn jetty:run-war
 
 Open your browser and goto:
 * http://localhost:8080/htmlvalidation for demo of the Html5InputTag
+
+![Html 5 validation page Screenshot](https://raw.githubusercontent.com/arey/spring-mvc-tookit/gh-pages/img/html5-input-validation-with-spring-mvc.png "Html 5 validation page Screenshot")
 
 
 ## Contributing to Spring MVC Tookit ##
