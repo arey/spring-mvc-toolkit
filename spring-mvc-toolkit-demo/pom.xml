@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.javaetmoi.core</groupId>
-    <artifactId>spring-mvc-toolkit-reactor</artifactId>
+    <artifactId>spring-mvc-toolkit-parent</artifactId>
     <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>spring-mvc-toolkit-demo</artifactId>
