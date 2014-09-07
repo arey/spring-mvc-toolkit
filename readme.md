@@ -79,16 +79,9 @@ Download the jar though Maven:
   <artifactId>spring-mvc-toolkit</artifactId>
   <version>0.1</version>
 </dependency> 
-       
-<repository>
-  <id>javaetmoi-maven-release</id>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <name>Java et Moi Maven RELEASE Repository</name>
-  <url>http://repository-javaetmoi.forge.cloudbees.com/release/</url>
-</repository>
 ```
+
+Spring MVC Toolkit artefacts are available from [Maven Central](http://repo1.maven.org/maven2/com/javaetmoi/core/javaetmoi-hibernate4-hydrate/)
 
 
 ## Demo ##
