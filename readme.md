@@ -81,7 +81,7 @@ Download the jar though Maven:
 </dependency> 
 ```
 
-Spring MVC Toolkit artefacts are available from [Maven Central](http://repo1.maven.org/maven2/com/javaetmoi/core/javaetmoi-hibernate4-hydrate/)
+Spring MVC Toolkit artefacts are available from [Maven Central](http://repo1.maven.org/maven2/com/javaetmoi/core/spring-mvc-toolkit/)
 
 
 ## Demo ##
