@@ -69,6 +69,12 @@ Here the mapping between Java and HTML 5 code:
 	</tbody>
 </table>
 
+
+**Tutorial**
+
+French articles on the javaetmoi.com blog:
+* [Validation HTML 5 avec Spring MVC et Bean Validation](http://javaetmoi.com/2014/09/validation-html-5-avec-spring-mvc-et-bean-validation/)
+
 ## Quick Start ##
 
 Download the jar though Maven:
