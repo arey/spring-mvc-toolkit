@@ -38,29 +38,25 @@ public class MyController {
     @ModelAttribute("myBean1")
     public MyBean addMyBean1ToSessionScope() {
         LOG.info("Inside of addMyBean1ToSessionScope");
-        MyBean bean = new MyBean("My Bean 1");
-        return bean;
+        return new MyBean("My Bean 1");
     }
     
     @ModelAttribute("myBean2")
     public MyBean addMyBean2ToRequestScope() {
         LOG.info("Inside of addMyBean2ToRequestScope");
-        MyBean bean = new MyBean("My Bean 2");
-        return bean;
+        return new MyBean("My Bean 2");
     }
     
     @ModelAttribute("myOtherBeanA")
     public MyOtherBean addMyOtherBeanAToSessionScope() {
         LOG.info("Inside of addMyOtherBeanAToSessionScope");
-        MyOtherBean bean = new MyOtherBean("My Other Bean A");
-        return bean;
+        return new MyOtherBean("My Other Bean A");
     }
     
     @ModelAttribute("myOtherBeanB")
     public MyOtherBean addMyOtherBeanBToSessionScope() {
         LOG.info("Inside of addMyOtherBeanBToSessionScope");
-        MyOtherBean bean = new MyOtherBean("My Other Bean B");
-        return bean;
+        return new MyOtherBean("My Other Bean B");
     }        
  
     @RequestMapping("/dosomething")
@@ -71,13 +67,11 @@ public class MyController {
         printSession(session);
         return "sessionsattributepage";
     }
-
     
     @RequestMapping("/endsession")
     public String endSessionHandlingMethod(SessionStatus status){
         status.setComplete();
         return "sessionsattributepage";
       }
- 
 }
 

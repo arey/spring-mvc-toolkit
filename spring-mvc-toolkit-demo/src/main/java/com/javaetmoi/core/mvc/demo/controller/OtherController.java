@@ -39,8 +39,7 @@ public class OtherController {
     @ModelAttribute("myBean3")
     public MyBean addMyBean3ToSessionScope() {
         LOG.info("Inside of addMyBean3ToSessionScope");
-        MyBean bean = new MyBean("My Bean 3");
-        return bean;
+        return new MyBean("My Bean 3");
     }
  
     @RequestMapping("/other")
