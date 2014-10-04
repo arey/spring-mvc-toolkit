@@ -45,10 +45,8 @@ public class OtherController {
     @RequestMapping("/other")
     public String otherHandlingMethod(Model model, HttpServletRequest request, HttpSession session, @ModelAttribute("myBean1") MyBean myBean) {
         LOG.info("Inside of other handler method");
-        LOG.info("--- myBean ---");
         LOG.info(myBean.toString());
  
-        LOG.info("--- Model data ---");
         printModel(model);
         printRequest(request);
         printSession(session);
