@@ -69,8 +69,11 @@ public class MyController {
     }
     
     @RequestMapping("/endsession")
-    public String endSessionHandlingMethod(SessionStatus status){
+    public String endSessionHandlingMethod(SessionStatus status, Model model, HttpServletRequest request, HttpSession session){
         status.setComplete();
+        printModel(model);
+        printRequest(request);
+        printSession(session);        
         return "sessionsattributepage";
       }
 }
