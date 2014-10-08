@@ -37,8 +37,7 @@ abstract class DataLogHelper {
             String s = e.nextElement();
             Object val = session.getAttribute(s);
             if (val instanceof MyBean || val instanceof MyOtherBean) {
-                LOG.info(s);
-                LOG.info("**" + val);
+                LOG.info(s + " -- " + val);
             }
         }
     }
@@ -50,8 +49,7 @@ abstract class DataLogHelper {
             String s = reqEnum.nextElement();
             Object val = request.getAttribute(s);
             if (val instanceof MyBean || val instanceof MyOtherBean) {
-                System.out.println(s);
-                System.out.println("==" + val);
+                LOG.info(s + " -- " + val);
             }
         }
     }
@@ -62,7 +60,7 @@ abstract class DataLogHelper {
         for (Object modelKey : modelMap.keySet()) {
             Object modelValue = modelMap.get(modelKey);
             if (modelValue instanceof MyBean || modelValue instanceof MyOtherBean) {
-                System.out.println(modelKey + " -- " + modelValue);
+                LOG.info(modelKey + " -- " + modelValue);
             }
         }
     }
